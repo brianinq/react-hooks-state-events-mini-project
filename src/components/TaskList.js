@@ -9,7 +9,7 @@ function TaskList({ tasks, deleteHandler }) {
     <div className="tasks">
       {/* display a list of tasks using Task component */}
       {tasks.map((task, i) => (
-        <Task key={i} task={task} deleteHandler={deleteObj} />
+        <Task key={i} task={task} category={task.category} text={task.text} deleteHandler={deleteObj} />
       ))}
     </div>
   );
